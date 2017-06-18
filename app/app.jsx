@@ -9,6 +9,10 @@ var Examples = require('Examples');
 // This is ES6 above (object destructuring), ES5 would look like this:
 // var Route = require('react-router').Route;
 
+// Load foundation
+require('style!css!foundation-sites/dist/foundation.min.css')
+$(document).foundation();
+
 ReactDOM.render(
   <Router history={hashHistory}>
     <Route path="/" component={Main}>
